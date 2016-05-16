@@ -1,0 +1,23 @@
+def word_finder(word, string):
+    
+    str_i = 0
+    wrd_i = 0
+    
+    for letter in string:
+        
+        if letter == word[wrd_i]:
+            print str_i, wrd_i, word[wrd_i]
+            wrd_i += 1
+        str_i += 1
+        
+        if wrd_i == len(word):
+            break
+        
+    if wrd_i == len(word):
+        return word + " found" 
+    else:
+        return word + " not found"
+
+
+
+print word_finder(raw_input("Enter any word of phrase you'd like:"), raw_input("Enter a random string of text:"))
