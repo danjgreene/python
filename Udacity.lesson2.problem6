@@ -17,21 +17,15 @@ def find_last(search, target):
             counter += 1
         start_pos += 1
         if start_pos > len(search):
-            break
-    return counter - 1
-        
+        	return counter - 1
 
-
-
-
-
-#print find_last('aaaa', 'a')
+print find_last('aaaa', 'a')
+#>>> 3
+print find_last('a', 'a')
+print find_last('aaaaa', 'aa')
 #>>> 3
 
-#print find_last('aaaaa', 'aa')
-#>>> 3
-
-#print find_last('aaaa', 'b')
+print find_last('aaaa', 'b')
 #>>> -1
 
 #print find_last("111111111", "1")
